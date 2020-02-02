@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <% unless notice.blank? %>
+      <%= notice %>
+    <% end %>
+    <% unless alert.blank? %>
+      <%= alert %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

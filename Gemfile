@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
 
 group :development, :test do
   gem 'pry'
@@ -42,6 +43,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'faker'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   #gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -61,7 +63,7 @@ end
 group :test do
     gem 'capybara-email'
 		gem 'database_cleaner'
-    gem 'faker' #some older RubySnacks reference 'ffaker'
+     #some older RubySnacks reference 'ffaker'
     gem 'selenium-webdriver'
     gem 'simple_bdd'
     gem 'shoulda-matchers'
